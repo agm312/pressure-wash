@@ -7,7 +7,7 @@ export default function About() {
       {/* Hero Section */}
       <div className="bg-blue-600 text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About PressurePro Chicago</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Chi Pressure Wash</h1>
           <p className="text-xl">Your trusted pressure washing service in Chicago since 2014</p>
         </div>
       </div>
@@ -18,7 +18,7 @@ export default function About() {
           <div>
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              Founded in 2014, PressurePro Chicago has been serving the Chicagoland area with professional pressure washing services for both residential and commercial properties. Our journey began with a simple mission: to provide top-quality exterior cleaning services that exceed our customers' expectations.
+              Founded in 2014, Chi Pressure Wash has been serving the Chicagoland area with professional pressure washing services for both residential and commercial properties. Our journey began with a simple mission: to provide top-quality exterior cleaning services that exceed our customers' expectations.
             </p>
             <p className="text-gray-600 mb-4">
               As Chicago natives, we understand the unique challenges that our city's weather and environment present to property maintenance. From harsh winters to humid summers, we know exactly what it takes to keep your property looking its best year-round.
@@ -133,7 +133,7 @@ export default function About() {
         {/* CTA Section */}
         <div className="text-center bg-gray-100 p-12 rounded-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Work with Us?</h2>
-          <p className="text-xl text-gray-600 mb-8">Experience the PressurePro Chicago difference today!</p>
+          <p className="text-xl text-gray-600 mb-8">Experience the Chi Pressure Wash difference today!</p>
           <Link href="/contact" className="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors duration-300">
             Get a Free Quote
           </Link>
