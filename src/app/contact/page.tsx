@@ -9,6 +9,7 @@ export default function Contact() {
     phone: '',
     service: '',
     message: '',
+    'bot-field': '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -17,19 +18,15 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
-
     try {
       const form = e.target as HTMLFormElement;
-      const formData = new FormData(form);
-
+      const data = new FormData(form);
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString(),
+        body: new URLSearchParams(data as any).toString(),
       });
-
       if (!response.ok) throw new Error('Form submission failed');
-
       setSubmitStatus('success');
       setFormData({
         name: '',
@@ -37,9 +34,9 @@ export default function Contact() {
         phone: '',
         service: '',
         message: '',
+        'bot-field': '',
       });
     } catch (error) {
-      console.error('Error submitting form:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -69,20 +66,17 @@ export default function Contact() {
             </div>
           )}
 
-          <form 
+          <form
             name="contact"
             method="POST"
+            action="/"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
             className="space-y-6"
           >
             <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
-
-            <div hidden>
-              <input name="bot-field" />
-            </div>
+            <input type="text" name="bot-field" hidden value={formData['bot-field']} onChange={handleChange} />
 
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
@@ -94,6 +88,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Full Name"
                 disabled={isSubmitting}
               />
             </div>
@@ -108,6 +103,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Email"
                 disabled={isSubmitting}
               />
             </div>
@@ -122,6 +118,7 @@ export default function Contact() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Phone"
                 disabled={isSubmitting}
               />
             </div>
@@ -138,8 +135,8 @@ export default function Contact() {
                 disabled={isSubmitting}
               >
                 <option value="">Select a service</option>
-                <option value="driveway">Driveway Cleaning</option>
-                <option value="siding">House Siding Cleaning</option>
+                <option value="driveway">Driveway</option>
+                <option value="siding">Siding</option>
                 <option value="deck">Deck or Patio Cleaning</option>
                 <option value="fence">Fence Cleaning</option>
                 <option value="sidewalk">Sidewalk/Walkway Cleaning</option>
@@ -157,7 +154,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Please provide any additional details about your service needs..."
+                placeholder="Message"
                 disabled={isSubmitting}
               />
             </div>
@@ -167,27 +164,11 @@ export default function Contact() {
               className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors duration-300 disabled:bg-blue-400 disabled:cursor-not-allowed"
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Submitting...' : 'Submit Booking Request'}
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>
           </form>
         </div>
       </div>
-
-      {/* Hidden form for Netlify build-time detection */}
-      <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <input type="tel" name="phone" />
-        <select name="service">
-          <option value="driveway">Driveway Cleaning</option>
-          <option value="siding">House Siding Cleaning</option>
-          <option value="deck">Deck or Patio Cleaning</option>
-          <option value="fence">Fence Cleaning</option>
-          <option value="sidewalk">Sidewalk/Walkway Cleaning</option>
-          <option value="vehicle">Vehicle Cleaning</option>
-        </select>
-        <textarea name="message"></textarea>
-      </form>
     </div>
   );
 } 
