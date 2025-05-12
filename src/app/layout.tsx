@@ -41,12 +41,6 @@ export default function RootLayout({
                 <p className="text-gray-400">Professional pressure washing services for residential and commercial properties in Chicago and surrounding suburbs.</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-                <p className="text-gray-400">Phone: (312) 555-0123</p>
-                <p className="text-gray-400">Email: info@pressurepro-chicago.com</p>
-                <p className="text-gray-400">Address: 123 W Madison St, Chicago, IL 60601</p>
-              </div>
-              <div>
                 <h3 className="text-xl font-semibold mb-4">Service Areas</h3>
                 <p className="text-gray-400">Chicago • Oak Park • Evanston</p>
                 <p className="text-gray-400">Naperville • Schaumburg • Aurora</p>
@@ -58,7 +52,7 @@ export default function RootLayout({
                   <li><a href="/about" className="text-gray-400 hover:text-white">About Us</a></li>
                   <li><a href="/gallery" className="text-gray-400 hover:text-white">Project Gallery</a></li>
                   <li><a href="/faq" className="text-gray-400 hover:text-white">FAQs</a></li>
-                  <li><a href="/blog" className="text-gray-400 hover:text-white">Blog</a></li>
+                  <li><a href="/contact" className="text-gray-400 hover:text-white">Contact Us</a></li>
                 </ul>
               </div>
             </div>
