@@ -26,10 +26,10 @@ export default function About() {
           </div>
           <div className="relative h-[400px] bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
             <Image
-              src="/our-story-pressure-wash.jpg"
+              src="/chi-pressure-wash.jpg"
               alt="Our Story - Pressure Washing"
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: 'cover' }}
               className="rounded-lg"
               priority
             />
