@@ -32,7 +32,17 @@ export default function Contact() {
         <h1 className="text-4xl font-bold text-center mb-8">Book Your Service</h1>
         
         <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form 
+            name="contact" 
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit} 
+            className="space-y-6"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+            
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                 Full Name
