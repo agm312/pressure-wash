@@ -1,38 +1,43 @@
 'use client'
+import Image from 'next/image'
 
 export default function AboutPage() {
   return (
     <div className="space-y-10">
-      <div className="w-full h-[500px] bg-gray-100 flex items-center justify-center">
-        <img
+      <div className="relative w-full h-[500px] bg-gray-100">
+        <Image
           src="/ceo-pressure-wash.jpg"
           alt="CEO - Pressure Washing"
-          className="object-cover w-full h-full"
-          style={{ maxHeight: 500 }}
+          fill
+          className="object-cover"
+          priority
         />
       </div>
-      <div className="w-full h-[500px] bg-gray-100 flex items-center justify-center">
-        <img
+      <div className="relative w-full h-[500px] bg-gray-100">
+        <Image
           src="/pressure-wash-opm.jpg"
           alt="Operations Manager - Pressure Washing"
-          className="object-cover w-full h-full"
-          style={{ maxHeight: 500 }}
+          fill
+          className="object-cover"
+          priority
         />
       </div>
-      <div className="w-full h-[500px] bg-gray-100 flex items-center justify-center">
-        <img
+      <div className="relative w-full h-[500px] bg-gray-100">
+        <Image
           src="/pressure-wash-sarah.jpg"
           alt="Office Team Member"
-          className="object-cover w-full h-full"
-          style={{ maxHeight: 500 }}
+          fill
+          className="object-cover"
+          priority
         />
       </div>
-      <div className="w-full h-[500px] bg-gray-100 flex items-center justify-center">
-        <img
+      <div className="relative w-full h-[500px] bg-gray-100">
+        <Image
           src="/chi-pressure-wash.jpg"
           alt="Team working in downtown Chicago"
-          className="object-cover w-full h-full"
-          style={{ maxHeight: 500 }}
+          fill
+          className="object-cover"
+          priority
         />
       </div>
     </div>
