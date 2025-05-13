@@ -28,8 +28,9 @@ export default function About() {
             <Image
               src="/chi-pressure-wash.jpg"
               alt="Our Story - Pressure Washing"
-              fill
-              style={{ objectFit: 'cover' }}
+              width={600}
+              height={400}
+              style={{ objectFit: 'cover', width: '100%', height: '100%' }}
               className="rounded-lg"
               priority
             />
