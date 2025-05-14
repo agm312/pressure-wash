@@ -32,7 +32,7 @@ export default function AboutPage() {
         </div>
         <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-lg h-80 relative">
           <Image
-            src="/our-story.jpg"
+            src="/chi-pressure-wash.jpg"
             alt="Our Story"
             fill
             className="object-cover"
@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div>
               <div className="w-40 h-40 mx-auto relative rounded-full overflow-hidden bg-gray-100">
                 <Image
-                  src="/team-michael.jpg"
+                  src="/ceo-pressure-wash.jpg"
                   alt="Michael Johnson"
                   fill
                   className="object-cover"
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <div>
               <div className="w-40 h-40 mx-auto relative rounded-full overflow-hidden bg-gray-100">
                 <Image
-                  src="/team-david.jpg"
+                  src="/pressure-wash-opm.jpg"
                   alt="David Williams"
                   fill
                   className="object-cover"
@@ -96,7 +96,7 @@ export default function AboutPage() {
             <div>
               <div className="w-40 h-40 mx-auto relative rounded-full overflow-hidden bg-gray-100">
                 <Image
-                  src="/team-sarah.jpg"
+                  src="/pressure-wash-sarah.jpg"
                   alt="Sarah Chen"
                   fill
                   className="object-cover"
