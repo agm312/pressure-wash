@@ -35,6 +35,7 @@ export default function AboutPage() {
             src="/chi-pressure-wash.jpg"
             alt="Our Story"
             fill
+            unoptimized
             className="object-cover"
           />
         </div>
@@ -75,6 +76,7 @@ export default function AboutPage() {
                   src="/ceo-pressure-wash.jpg"
                   alt="Michael Johnson"
                   fill
+                  unoptimized
                   className="object-cover"
                 />
               </div>
@@ -87,6 +89,7 @@ export default function AboutPage() {
                   src="/pressure-wash-opm.jpg"
                   alt="David Williams"
                   fill
+                  unoptimized
                   className="object-cover"
                 />
               </div>
@@ -99,6 +102,7 @@ export default function AboutPage() {
                   src="/pressure-wash-sarah.jpg"
                   alt="Sarah Chen"
                   fill
+                  unoptimized
                   className="object-cover"
                 />
               </div>
