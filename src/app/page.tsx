@@ -6,32 +6,26 @@ const services = [
   {
     title: 'Driveway Cleaning',
     description: 'Professional driveway cleaning in Chicago. Remove stubborn stains, oil, and winter salt damage.',
-    price: 'Starting from $100. Per square foot pricing available for larger areas.',
   },
   {
     title: 'House Siding Cleaning',
     description: 'Expert house washing for Chicago homes. Safe for vinyl, brick, and aluminum siding.',
-    price: 'Starting from $250. Pricing varies based on size and siding material.',
   },
   {
     title: 'Deck & Patio Cleaning',
     description: 'Restore your Chicago deck or patio. Perfect for spring cleaning and summer preparation.',
-    price: 'Starting from $100. Pricing varies based on size and material.',
   },
   {
     title: 'Fence Cleaning',
     description: 'Cleans wood or vinyl fences, removes mold or dirt',
-    price: 'Starting from $150. Pricing varies based on size and material.',
   },
   {
     title: 'Sidewalk/Walkway Cleaning',
     description: 'Clears dirt, gum, and stains from concrete or brick',
-    price: 'Starting from $80. Pricing varies based on size.',
   },
   {
     title: 'Vehicle Cleaning',
     description: 'Cleans cars, trucks, RVs, or boats (gentle PSI)',
-    price: 'Flat Rate: $50 - $350 per vehicle. Pricing varies based on size and material.',
   },
 ];
 
@@ -113,20 +107,6 @@ export default function Home() {
             <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">{service.title}</h2>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <div className="border-t pt-4 mb-4">
-                {service.price.split('. ').map((sentence, idx) => (
-                  idx === 0 ? (
-                    <span key={idx} className="text-lg font-medium text-blue-600">
-                      {sentence.trim()}
-                      {sentence.trim().endsWith('.') ? '' : '.'}
-                    </span>
-                  ) : (
-                    <span key={idx} className="block text-sm text-black mt-1" style={{ fontSize: '0.95em' }}>
-                      ({sentence.trim()})
-                    </span>
-                  )
-                ))}
-              </div>
               <Link href="/contact" className="w-full block bg-blue-600 text-white py-2 px-4 rounded-md font-semibold text-center hover:bg-blue-700 transition-colors duration-300 mb-4">
                 Get a Free Quote
               </Link>

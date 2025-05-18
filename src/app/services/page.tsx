@@ -7,7 +7,6 @@ const services = [
     id: 'driveway',
     title: 'Driveway Cleaning',
     description: 'Cleans concrete/asphalt, removes oil and grime',
-    price: 'Starting from $100 (Flat Rate for standard size). Per square foot pricing available for larger areas.',
     details: [
       'Removes oil stains and tire marks',
       'Eliminates dirt and grime buildup',
@@ -20,7 +19,6 @@ const services = [
     id: 'siding',
     title: 'House Siding Cleaning',
     description: 'Cleans vinyl, brick, or aluminum siding (1–2 stories)',
-    price: 'Starting from $250 (for 1-2 story homes). Pricing varies based on size and siding material.',
     details: [
       'Removes mold and mildew',
       'Cleans dirt and debris',
@@ -33,7 +31,6 @@ const services = [
     id: 'deck',
     title: 'Deck or Patio Cleaning',
     description: 'Restores wood, composite, or concrete surfaces',
-    price: 'Starting from $100. Pricing varies based on size and material.',
     details: [
       'Removes mold and mildew',
       'Cleans dirt and debris',
@@ -46,7 +43,6 @@ const services = [
     id: 'fence',
     title: 'Fence Cleaning',
     description: 'Cleans wood or vinyl fences, removes mold or dirt',
-    price: 'Starting from $150. Pricing varies based on size and material.',
     details: [
       'Removes mold and mildew',
       'Cleans dirt and debris',
@@ -59,7 +55,6 @@ const services = [
     id: 'sidewalk',
     title: 'Sidewalk/Walkway Cleaning',
     description: 'Clears dirt, gum, and stains from concrete or brick',
-    price: 'Starting from $80. Pricing varies based on size.',
     details: [
       'Removes gum and stains',
       'Cleans dirt and debris',
@@ -72,7 +67,6 @@ const services = [
     id: 'vehicle',
     title: 'Vehicle Cleaning',
     description: 'Cleans cars, trucks, RVs, or boats (gentle PSI)',
-    price: 'Flat Rate: $50 - $350 per vehicle. Pricing varies based on size and material.',
     details: [
       'Safe for all vehicle types',
       'Removes dirt and grime',
@@ -99,29 +93,12 @@ export default function Services() {
             >
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">{service.title}</h2>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              
-              <div className="border-t pt-4 mb-4">
-                {service.price.split('. ').map((sentence, idx) => (
-                  idx === 0 ? (
-                    <span key={idx} className="text-lg font-medium text-blue-600">
-                      {sentence.trim()}
-                      {sentence.trim().endsWith('.') ? '' : '.'}
-                    </span>
-                  ) : (
-                    <span key={idx} className="block text-sm text-black mt-1" style={{ fontSize: '0.95em' }}>
-                      ({sentence.trim()})
-                    </span>
-                  )
-                ))}
-              </div>
-
               <button
                 onClick={() => setSelectedService(selectedService === service.id ? null : service.id)}
                 className="text-blue-600 hover:text-blue-800 font-medium"
               >
                 {selectedService === service.id ? 'Hide Details' : 'Show Details'}
               </button>
-
               {selectedService === service.id && (
                 <div className="mt-4 pt-4 border-t">
                   <h3 className="font-semibold mb-2">Service Includes:</h3>
