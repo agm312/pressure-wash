@@ -5,9 +5,16 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'PressurePro: Professional Pressure Washing Services in Chicago, IL',
-  description: 'Expert pressure washing services in Chicago and surrounding suburbs. Professional cleaning for homes, driveways, decks, and commercial properties. Licensed, insured, and locally owned.',
+  title: 'Chi Pressure Wash | Power Washing in Chicago & Suburbs',
+  description: 'Top-rated pressure washing in Chicago for homes and businesses. Licensed, insured, and trusted since 2014. Get a free quote today.',
   keywords: 'pressure washing Chicago, power washing Chicago, driveway cleaning Chicago, house washing Illinois, deck cleaning Chicago, commercial pressure washing Chicago',
+  alternates: {
+    canonical: 'https://chipressurewash.com/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
