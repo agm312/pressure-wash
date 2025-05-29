@@ -30,10 +30,10 @@ export default function OakParkPressureWashing() {
           <p className="text-lg text-gray-800 mb-4">
             Call
             <a
-              href="tel:555-123-4567"
+              href="tel:404-955-7869"
               className="inline-block bg-blue-600 text-white font-semibold px-6 py-2 rounded ml-2 hover:bg-blue-700 transition"
             >
-              555-123-4567
+              404-955-7869
             </a>
             <br />
             or request a quote online. Serving all of Oak Park.
