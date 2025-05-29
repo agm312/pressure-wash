@@ -38,7 +38,7 @@ export default function DrivewayCostPage() {
           Cost to Pressure Wash a Driveway in 2025: Prices & Calculator
         </h1>
         <img
-          src="/Pressure%20wash%20driveway.png"
+          src="/Pressure-wash-driveway.png"
           alt="Clean concrete driveway after pressure washing"
           className="w-full h-auto rounded-lg shadow-lg mb-6"
           loading="lazy"
