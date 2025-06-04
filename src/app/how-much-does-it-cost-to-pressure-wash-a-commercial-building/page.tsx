@@ -62,13 +62,13 @@ export default function CommercialBuildingCostPage() {
           How Much Does It Cost to Pressure Wash a Commercial Building
         </h1>
         <div className="flex justify-center mb-4">
-          <Image
+          <img
             src="/images/commercial-pre-wash-compressed.jpg"
             alt="Commercial pressure washing in progress"
-            width={700}
-            height={400}
             className="rounded-lg shadow-lg object-cover w-full max-w-2xl max-h-96"
-            priority
+            width="700"
+            height="400"
+            loading="lazy"
           />
         </div>
         <p className="text-lg text-gray-700">
