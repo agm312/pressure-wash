@@ -35,14 +35,16 @@ export default function DrivewayCostPage() {
     <article className="max-w-4xl mx-auto px-4 py-8">
       <header className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">
-          Cost to Pressure Wash a Driveway in 2025: Prices & Calculator
+          How Much Is It to Pressure Wash a Driveway?
         </h1>
-        <img
-          src="/Pressure-wash-driveway.png"
-          alt="Clean concrete driveway after pressure washing"
-          className="w-full h-auto rounded-lg shadow-lg mb-6"
-          loading="lazy"
-        />
+        <div className="flex justify-center">
+          <img
+            src="/images/cost-pressure-wash-driveway.png"
+            alt="Pressure washing a driveway cost example"
+            className="w-full max-w-2xl max-h-96 object-cover rounded-lg shadow-lg mb-4"
+            loading="lazy"
+          />
+        </div>
         <p className="text-lg text-gray-700">
           Curious about the <strong>cost to pressure wash a driveway</strong>? In 2025, prices typically range from $100 to $240 for a standard 600 sq. ft. driveway. This guide breaks down average costs, factors that impact pricing, and includes a free calculator to estimate your project. Whether you're hiring a professional or considering DIY, we've got all the details you need!
         </p>
