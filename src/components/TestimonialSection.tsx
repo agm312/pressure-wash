@@ -3,19 +3,19 @@ export default function TestimonialSection() {
     {
       quote: 'PressurePro made my home look brand new! Their team was professional, thorough, and reasonably priced. The difference is night and day.',
       author: 'John D.',
-      location: 'Chicago, IL',
+      location: 'Lincoln Park, Chicago, IL',
       rating: 5,
     },
     {
       quote: 'I was amazed at how quickly they transformed my dirty siding. The price was exactly what they quoted, and the service was exceptional.',
       author: 'Sarah M.',
-      location: 'Austin, TX',
+      location: 'Wicker Park, Chicago, IL',
       rating: 5,
     },
     {
       quote: 'After years of DIY attempts, I finally hired professionals. Worth every penny! My house hasn\'t looked this good since we moved in.',
       author: 'Michael R.',
-      location: 'Seattle, WA',
+      location: 'Oak Park, IL',
       rating: 5,
     },
   ];
