@@ -63,7 +63,7 @@ export default function CommercialBuildingCostPage() {
         </h1>
         <div className="flex justify-center mb-4">
           <Image
-            src="/images/commercial-pre-wash.png"
+            src="/images/commercial-pre-wash-compressed.jpg"
             alt="Commercial pressure washing in progress"
             width={700}
             height={400}
