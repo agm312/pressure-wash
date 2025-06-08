@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,18 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const service = searchParams.get('service');
+    const message = searchParams.get('message');
+    setFormData(prev => ({
+      ...prev,
+      service: service && !prev.service ? service : prev.service,
+      message: message && !prev.message ? message : prev.message,
+    }));
+    // eslint-disable-next-line
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -141,6 +154,7 @@ export default function Contact() {
                 <option value="fence">Fence Cleaning</option>
                 <option value="sidewalk">Sidewalk/Walkway Cleaning</option>
                 <option value="vehicle">Vehicle Cleaning</option>
+                <option value="roof">Roof</option>
               </select>
             </div>
 

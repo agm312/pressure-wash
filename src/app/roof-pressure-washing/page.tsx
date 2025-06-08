@@ -1,5 +1,6 @@
 import TestimonialSection from '@/components/TestimonialSection';
 import type { Metadata } from 'next';
+import RoofCalculator from '@/components/RoofCalculator';
 
 export const metadata: Metadata = {
   title: 'Roof Pressure Washing: Safe, Effective Cleaning for Your Roof',
@@ -106,6 +107,7 @@ export default function RoofPressureWashingPage() {
             <li><b>Accessibility:</b> Multi-story homes or hard-to-reach areas may cost more.</li>
           </ul>
         </section>
+        <RoofCalculator />
         <section id="diy-vs-pro" className="mb-12">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">DIY vs Professional Roof Washing</h2>
           <ul className="list-disc pl-5 space-y-2">
