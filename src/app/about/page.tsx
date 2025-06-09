@@ -73,11 +73,12 @@ export default function AboutPage() {
             <div>
               <div className="w-40 h-40 mx-auto relative rounded-full overflow-hidden bg-gray-100">
                 <Image
-                  src="/ceo-pressure-wash.jpg"
+                  src="/images/New.ceo.pw.jpg"
                   alt="Michael Johnson"
                   fill
                   unoptimized
                   className="object-cover"
+                  style={{ objectPosition: '0% center' }}
                 />
               </div>
               <h3 className="mt-6 text-xl font-semibold">Michael Johnson</h3>
@@ -86,7 +87,7 @@ export default function AboutPage() {
             <div>
               <div className="w-40 h-40 mx-auto relative rounded-full overflow-hidden bg-gray-100">
                 <Image
-                  src="/pressure-wash-opm.jpg"
+                  src="/images/opm.new.pic.jpg"
                   alt="David Williams"
                   fill
                   unoptimized
@@ -99,11 +100,12 @@ export default function AboutPage() {
             <div>
               <div className="w-40 h-40 mx-auto relative rounded-full overflow-hidden bg-gray-100">
                 <Image
-                  src="/pressure-wash-sarah.jpg"
+                  src="/images/new.sarah.pw.jpg"
                   alt="Sarah Chen"
                   fill
                   unoptimized
                   className="object-cover"
+                  style={{ objectPosition: '0% center' }}
                 />
               </div>
               <h3 className="mt-6 text-xl font-semibold">Sarah Chen</h3>

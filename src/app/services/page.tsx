@@ -74,6 +74,18 @@ const services = [
       'Improves appearance',
       'Protects paint and finish'
     ]
+  },
+  {
+    id: 'roof',
+    title: 'Roof Pressure Washing',
+    description: 'Safely cleans shingle, tile, or metal roofs; removes moss, algae, and debris',
+    details: [
+      'Removes moss, algae, and lichen',
+      'Safe for shingles, tile, and metal roofs',
+      'Soft wash method prevents damage',
+      'Improves roof appearance and longevity',
+      'Prevents costly repairs from buildup'
+    ]
   }
 ];
 
